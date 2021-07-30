@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Schedule</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap" rel="stylesheet">
+</head>
+<%- include('../partials/header') %>
+<body>
+    <main>
+        <div class="container">
+            <form action="/new" method="post">
+              <div class="row">
+                <div class="col-25">
+                  <label for="id">ID</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="id" name="id" placeholder="ID..">
+                </div>
+                </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="username">User Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="username" name="username" placeholder="User Name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="dayoftheweek">Choose Day</label>
+                </div>
+                <div class="col-75">
+                  <!-- <input type="text" id="dayoftheweek" name="dayoftheweek" placeholder="Day of the Week.."> -->
+                  
+                  <select name="dayoftheweek" id="dayoftheweek">
+                  <option value="" selected="selected">Select Day</option> 
+                  <option value="1">Monday</option>
+                  <option value="2">Tuesday</option>
+                  <option value="3">Wednesday</option>
+                  <option value="5">Thursday</option>
+                  <option value="6">Friday</option>
+                  <option value="7">Saturday</option>
+                  <option value="8">Sunday</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="starttime">Start Time</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="starttime" name="starttime" placeholder="User star time..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="endtime">End Time</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="endtime" name="endtime" placeholder="User end time..">
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    </main>
+</body>
+<%- include('../partials/footer') %>
+</html>

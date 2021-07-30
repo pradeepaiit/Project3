@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pg-promise": "^10.10.2"
+  },
+  "name": "project3",
+  "version": "1.0.0",
+  "main": "data.js",
+  "devDependencies": {},
+  "scripts": {
+    "createdatabase": "psql -U postgres -f sql/createdatabase.sql",
+    "createtables": "psql -U postgres -d mrcoffee -f sql/createtables.sql",
+    "seedtables": "psql -U postgres -d mrcoffee -f sql/seedtables.sql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

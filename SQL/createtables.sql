@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS schedules;
+
+CREATE TABLE IF NOT EXISTS schedules (
+    ID SERIAL PRIMARY KEY,
+    username VARCHAR(200) NOT NULL,
+    dayoftheweek VARCHAR(200) NOT NULL,
+    starttime TIMESTAMP(6) NOT NULL,
+    endtime TIMESTAMP(6) NOT NULL
+);
