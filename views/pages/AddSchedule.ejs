@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Schedule</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap" rel="stylesheet">
+</head>
+<%- include('../partials/header') %>
+<body>
+    <main>
+        <div class="container">
+            <form action="/AddSchedule" method="post">
+              <div class="row">
+                <div class="col-25">
+                  <label for="user_id">User ID</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="user_id" name="user_id" placeholder="User Id..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="day">Day</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="day" name="day" placeholder="Day..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="start_at">Start Time</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="start_at" name="start_at" placeholder="User star time..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="end_at">End Time</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="end_at" name="end_at" placeholder="User end time..">
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    </main>
+</body>
+<%- include('../partials/footer') %>
+</html>

@@ -1,0 +1,234 @@
+*, 
+*:after, 
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header */
+nav{
+    display: flex;
+    padding: 1% 2%;
+    background-color: #009879;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #36f44f;
+    display: block;
+    margin: auto;
+    transition: 0.1s;
+  }
+
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+
+    nav img{
+        width: 120px
+    }
+
+/* Body */
+/* Makes home page text blink */
+.blink{
+    animation:blinking 1s infinite;
+font-size: 100px;
+}
+/* Makes home page text blink */
+@keyframes blinking{
+    50%{   color: red;   }
+    0%{   color: rgb(33, 14, 202);   }
+    47%{   color: #000; }
+    62%{   color: transparent; }
+    97%{   color:transparent; }
+    100%{  color: #000;   }
+    }
+
+    /* Table styling */
+    .tablestyle th:hover,
+    .tablestyle td:hover
+    {
+        color: violet;
+    }
+    .tablestyle {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tablestyle thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .tablestyle th,
+    .tablestyle td {
+        padding: 20px 70px;
+    }
+
+    .tablestyle tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .tablestyle tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .stablestyle tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+    /* Error page */
+    .error{
+        color: red;
+        font-size: 50px;
+        padding: 10px;
+        text-align: center;
+        padding-top: 130pt;
+        animation:blinking 0.7s infinite;
+            }
+/* Makes error message blink */
+@keyframes blinking{
+    0%{   color: red;   }
+    47%{   color: red; }
+    62%{   color: transparent; }
+    97%{   color:transparent; }
+    100%{  color: red;   }
+    }
+/* AddUser Form */    
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+    /* Footer */
+
+    .footer{
+           position: fixed;
+            padding: 0px 0px 0px 0px;
+            bottom: 0;
+            width: 100%;
+    }
+
+    .footer nav{
+        display: flex;
+        padding: 1% 2%;
+        background-color:#009879;
+        justify-content: space-between;
+        }
+     .footer nav img{
+            width: 50px
+        }
+    
+      .footer-text p{
+        color: white;
+      }
+
+      .footer-text p{
+        color: white;
+      }
+    
+    .nav p{
+        text-align: center;
+    }
+    
+
+/* Footer images */
+      .linkedin{
+        width: 50px
+      }
+      
+      .twitter{
+        width: 50px
+      }
+      
+      .facebook{
+        width: 50px
+      }
+      
